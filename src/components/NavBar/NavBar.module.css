@@ -1,0 +1,194 @@
+.primaryHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--ff-barlow);
+    text-transform: uppercase;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo{
+    margin: 2.5rem;
+}
+
+.primaryNavigationClosed{
+    min-width: calc(min(736px, 100vw - 126px));;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0 0% 0% / 0.75);
+    backdrop-filter: blur(1rem);
+    padding-block: 28px;
+    padding-right: 3rem;
+}
+
+.primaryNavigationOpen{
+    min-width: calc(min(736px, 100vw - 126px));;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0 0% 0% / 0.75);
+    backdrop-filter: blur(1rem);
+    padding-block: 28px;
+    padding-right: 3rem;
+}
+
+@supports(backdrop-filter: blur(1rem)){
+    .primaryNavigationClosed{
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+
+    .primaryNavigationOpen{
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+}
+
+.primaryNavigationClosed a{
+    text-decoration: none;
+}
+
+.primaryNavigationOpen a{
+    text-decoration: none;
+}
+
+.primaryNavigationNumber{
+    font-weight: 700;
+    margin-inline-end: .5em;
+    letter-spacing: .15rem;
+    font-size: 18px;
+}
+
+.currentpageLink{
+    color: white;
+    font-size: 18px;
+    padding-block: 26px;
+    transition: border-bottom 200ms ease-in-out;
+    border-bottom: 3px solid var(--clr-primary);
+}
+
+.pageLink{
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    padding-block: 26px;
+    transition: border-bottom 200ms ease-in-out;
+}
+
+.pageLink:hover{
+    color: white;
+    font-weight: 200;
+    border-bottom: 3px solid var(--clr-neutral-3);
+}
+
+@media (max-width: 48em) {
+    .primaryNavigationNumber{
+        font-size: 14px;
+    }
+
+    .currentpageLink{
+        font-size: 14px;
+    }
+    
+    .pageLink{
+        font-size: 14px;
+    }
+}
+
+.mobileNavToggle{
+    display: none;
+}
+
+.mobileNavToggleClosed{
+    display: none;
+}
+
+@media (max-width: 35em){
+    .primaryNavigationClosed{
+        justify-content: flex-start;
+        gap: 1.25em;
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vw, 7rem) 2em;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+        padding-right: 1.5rem;
+    }
+
+    .primaryNavigationOpen{
+        justify-content: flex-start;
+        gap: 1.25em;
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 7rem) 2em;
+        z-index: 1000;
+        transition: transform 350ms ease-in;
+    }
+
+    .mobileNavToggle{
+        display: block;
+        position: absolute;
+        background: url("./hamburger.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 0;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        top: 2.25rem;
+        right: 2rem;
+        z-index: 9999;
+    }
+
+    .mobileNavToggleClosed{
+        display: block; 
+        position: absolute;
+        background: url("./close.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 0;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        top: 2.25rem;
+        right: 2rem;
+        z-index: 9999;
+    }
+
+    .logo{
+        margin: 1.5rem;
+        height: 40px;
+        width: 40px;
+    }
+
+    .currentpageLink{
+        border-bottom: none;
+    }
+
+    .pageLink:hover {
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 35em) and (max-width: 48em) {
+
+    .primaryNavigationClosed{
+        padding-right: 2rem;
+    }
+
+    .primaryNavigationOpen{
+        padding-right: 2rem;
+    }
+}

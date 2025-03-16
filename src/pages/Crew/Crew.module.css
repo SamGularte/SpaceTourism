@@ -1,0 +1,191 @@
+.background{
+    background-image: url('./background-3.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    color: var(--clr-primary);
+    padding-inline: 2.5rem;
+    padding-block: 1.5rem;
+}
+
+.container h4{
+    color: var(--clr-primary);
+    font-size: 28px;
+    font-family: var(--ff-barlow);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 200;
+}
+
+.blackColor{
+    color: var(--clr-neutral-3);
+    font-weight: bold;
+}
+
+.crewContainer{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.CrewMember{
+    height: 100%;
+    width: auto;
+}
+
+.crew{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.crewContentContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.crewContentContainer > :first-child{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.crewContentContainer > :nth-child(2){
+    padding-block: 2rem;
+}
+
+.activeCrewmateRole{
+    font-size: 32px;
+    color: var(--clr-neutral-4);
+    font-family: var(--ff-bellefair);
+    text-transform: uppercase;
+}
+
+.activeCrewmateName{
+    font-size: 56px;
+    color: var(--clr-primary);
+    font-family: var(--ff-bellefair);
+    text-transform: uppercase;
+    padding-block: 1rem;
+}
+
+.activeCrewmateDescription{
+    font-size: 18px;
+    font-family: var(--ff-barlow);
+    letter-spacing: .085rem;
+    color: var(--clr-neutral-1);
+    line-height: 2.2rem;
+    opacity: .7;
+}
+
+.buttonsContainer{
+    display: flex;
+    gap: 2.5rem;
+    height: 63px;
+    align-items: flex-end;
+}
+
+.activeCrewmatebutton{
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: var(--clr-primary);
+    border-radius: 50%;
+}
+
+.Crewmatebutton{
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: var(--clr-neutral-3);
+    border-radius: 50%;
+}
+
+.Crewmatebutton:hover{
+    background-color: var(--clr-neutral-4);
+}
+
+@media (max-width: 55em){
+    .crewContainer{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crew{
+        margin: 0 auto;
+    }
+
+    .activeCrewmateRole{
+        font-size: 28px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .activeCrewmateName{
+        font-size: 42px;
+        text-align: center;
+        padding-block: .5rem;
+    }
+
+    .activeCrewmateDescription{
+        text-align: center;
+        max-width: 552px;
+        margin: 0 auto;
+    }
+    
+
+    .buttonsContainer{
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 35em){
+    .container {
+        padding-inline: 1.5rem;
+        padding-block: 1.5rem;
+    }
+
+    .container h4{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .activeCrewmateRole{
+        font-size: 20px;
+    }
+
+    .activeCrewmateName{
+        font-size: 28px;
+    }
+
+    .activeCrewmateDescription{
+        font-size: 16px;
+    }
+}
