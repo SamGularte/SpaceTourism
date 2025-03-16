@@ -12,7 +12,7 @@
 
 @media (max-width: 48em) {
     .background{
-        background-image: url('./background-1-rotation.svg');
+        background-image: url('/background-1-rotation.svg');
     }
 }
 

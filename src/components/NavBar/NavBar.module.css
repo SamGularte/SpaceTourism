@@ -140,7 +140,7 @@
     .mobileNavToggle{
         display: block;
         position: absolute;
-        background: url("./hamburger.svg");
+        background: url("/hamburger.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -155,7 +155,7 @@
     .mobileNavToggleClosed{
         display: block; 
         position: absolute;
-        background: url("./close.svg");
+        background: url("/close.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
