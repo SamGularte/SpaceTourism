@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 
 import styles from './Navbar.module.css'
 
+import logo from '/Logo.svg';
+
 const NavBar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +16,7 @@ const NavBar = () => {
   return (
     <nav className={styles.primaryHeader}>
         <NavLink className={styles.logo} to="/">
-            <img src="./Logo.svg" alt="Logo" />
+            <img src={logo} alt="Logo" />
         </NavLink>
         <button className={isOpen ? styles.mobileNavToggleClosed : styles.mobileNavToggle} onClick={toggleNavbar} aria-expanded={isOpen} aria-label="Toggle navigation"></button>
         <ul className={isOpen ? styles.primaryNavigationOpen : styles.primaryNavigationClosed}>
