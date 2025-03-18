@@ -81,6 +81,24 @@
     outline: 5rem solid var(--clr-primary-transparent);
 }
 
+@media (min-width: 55em) and (max-height: 850px) {
+
+    .heroSection h4{
+        font-size: 24px;
+    }
+    
+    .heroSection h1{
+        font-size: 120px;
+    }
+    
+
+    .heroButton{
+        width: 14rem;
+        height: 14rem;
+        font-size: 28px;
+    }
+}
+
 @media (max-width: 55em){
     .container {
         grid-template-columns: 1fr;

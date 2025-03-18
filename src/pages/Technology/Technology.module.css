@@ -117,6 +117,12 @@
     object-fit: contain;
 }
 
+@media (min-width: 60em) and (max-height: 850px){
+    .technologyImg{
+        height: 480px;
+    }
+}
+
 @media (max-width: 88.75em){
     .container {
         padding-left: 5rem;

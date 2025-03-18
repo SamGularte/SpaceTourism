@@ -133,7 +133,7 @@
     opacity: .7;
 }
 
-@media (max-width: 73.75em){
+@media (max-width: 73.75em) or (max-height: 850px){
 
     .planetContainer{
         flex: 1;

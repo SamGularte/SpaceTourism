@@ -16,7 +16,8 @@
     max-width: 1180px;
     width: 100%;
     margin: 0 auto;
-    min-height: 100%;
+    max-height: 100dvh;
+    height: 100%;
     color: var(--clr-primary);
     padding-inline: 2.5rem;
     padding-block: 1.5rem;
@@ -127,6 +128,25 @@
 
 .Crewmatebutton:hover{
     background-color: var(--clr-neutral-4);
+}
+
+@media (min-width: 55em) and (max-height: 850px){
+    .crew{
+        height: 550px;
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 55em) and (max-height: 800px){
+    .crew{
+        height: 500px;
+    }
+}
+
+@media (min-width: 55em) and (max-height: 750px){
+    .crew{
+        height: 450px;
+    }
 }
 
 @media (max-width: 55em){
