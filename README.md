@@ -1,12 +1,27 @@
-# React + Vite
+# Space Tourism Website  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de uma agência espacial fictícia, criado com **React, JavaScript e CSS**, baseado em um desafio do **Frontend Mentor**. O foco foi desenvolver um site responsivo e visualmente atraente, proporcionando uma boa experiência ao usuário em diversos dispositivos.  
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** – Estrutura modular e componentizada para facilitar a manutenção do código.  
+- **JavaScript (ES6+)** – Manipulação de estados e interatividade.  
+- **CSS (Modules)** – Estilização customizada e responsiva.  
+- **React Router** – Navegação entre páginas sem recarregamento.  
 
-## Expanding the ESLint configuration
+## 📱 Responsividade  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O site foi desenvolvido com um **design mobile-first**, garantindo uma experiência fluida em diferentes tamanhos de tela, incluindo:  
+✔️ Dispositivos móveis (smartphones e tablets)  
+✔️ Laptops e desktops  
+✔️ Telas grandes  
+
+## 🎨 Design  
+
+O design deste projeto foi baseado no desafio do **Frontend Mentor**, que oferece layouts profissionais para aprimorar habilidades de desenvolvimento front-end.  
+
+## 🔗 Acesse o projeto  
+
+🌍 **Live Preview**: [Clique aqui para ver o projeto ao vivo](https://samgularte.github.io/SpaceTourism/)  
+💻 **Código-fonte**: [Repositório no GitHub](https://github.com/SamGularte/SpaceTourism)  
+
