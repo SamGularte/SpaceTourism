@@ -1,0 +1,251 @@
+.background{
+    background-image: url('/background-4.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    color: var(--clr-primary);
+    padding-left: 10rem;
+    padding-block: 1.5rem;
+}
+
+.container h4{
+    color: var(--clr-primary);
+    font-size: 28px;
+    font-family: var(--ff-barlow);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 200;
+}
+
+.blackColor{
+    color: var(--clr-neutral-3);
+    font-weight: bold;
+}
+
+.technologyContainer{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contentContainer{
+    display: flex;
+    gap: 3.5rem;
+}
+
+.buttonsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.activeTechnologybutton{
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    background-color: var(--clr-primary);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    font-family: var(--ff-bellefair);
+    color: var(--clr-neutral-2);
+}
+
+.Technologybutton{
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+    border: 3px solid var(--clr-neutral-3);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    font-family: var(--ff-bellefair);
+}
+
+.Technologybutton:hover{
+    border: 3px solid var(--clr-primary);
+}
+
+.terminology{
+    font-size: 32px;
+    color: var(--clr-neutral-4);
+    font-family: var(--ff-bellefair);
+    text-transform: uppercase;
+}
+
+.activeTechnologyName{
+    font-size: 56px;
+    color: var(--clr-primary);
+    font-family: var(--ff-bellefair);
+    text-transform: uppercase;
+    padding-block: 1rem;
+}
+
+.activeTechnologyDescription{
+    font-size: 18px;
+    font-family: var(--ff-barlow);
+    letter-spacing: .085rem;
+    color: var(--clr-neutral-1);
+    line-height: 2.2rem;
+    opacity: .7;
+}
+
+.technologyImg{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (min-width: 60em) and (max-height: 850px){
+    .technologyImg{
+        height: 480px;
+    }
+}
+
+@media (max-width: 88.75em){
+    .container {
+        padding-left: 5rem;
+    }
+}
+
+@media (max-width: 83.75em){
+    .container {
+        padding-left: 2.5rem;
+    }
+}
+
+@media (max-width: 81.25em){
+    .technologyContainer{
+        grid-template-columns: 1.1fr .9fr;
+    }
+    
+    .contentContainer{
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .terminology{
+        font-size: 28px;
+    }
+
+    .activeTechnologyName{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 60em){
+    .container {
+        padding-left: 0;
+        padding-block: 1.5rem;
+    }
+
+    .container h4{
+        padding-inline: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .technologyContainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contentContainer{
+        flex-direction: column;
+    }
+
+    .buttonsContainer{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .activeTechnologybutton{
+        height: 56px;
+        width: 56px;
+    }
+    
+    .Technologybutton{
+        height: 56px;
+        width: 56px;
+    }
+
+    .contentTextContainer{
+        padding-inline: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .terminology{
+        text-align: center;
+    }
+    
+    .activeTechnologyName{
+        text-align: center;
+    }
+    
+    .activeTechnologyDescription{
+        text-align: center;
+        max-width: 552px;
+    }
+
+    .technologyImg{
+        padding-top: 1.5rem;
+    }
+}
+
+@media (max-width: 35em){
+    .container h4{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .activeTechnologybutton{
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+    }
+
+    .Technologybutton{
+        height: 40px;
+        width: 40px;
+        font-size: 18px;
+    }
+
+    .contentTextContainer{
+        padding-inline: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .terminology{
+        font-size: 20px;
+    }
+    
+    .activeTechnologyName{
+        font-size: 28px;
+    }
+    
+    .activeTechnologyDescription{
+        font-size: 16px;
+        letter-spacing: .06rem;
+    }
+}
