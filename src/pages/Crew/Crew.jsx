@@ -1,5 +1,4 @@
 import styles from './Crew.module.css'
-import { motion } from "framer-motion";
 
 import { useState } from "react";
 
@@ -32,15 +31,14 @@ const Crew = () => {
               ))}
             </div>
           </div>
-          <motion.img 
+          <img 
             key={activeCrewmember}
             src={data[activeCrewmember].image} 
             alt={`${data[activeCrewmember].role} image`} 
             className={styles.crew}
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -100, opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            width={568}
+            height={712}
+            loading="lazy"
           />
         </section>
       </main>

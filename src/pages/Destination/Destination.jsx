@@ -1,5 +1,4 @@
 import styles from './Destination.module.css'
-import { motion } from "framer-motion";
 
 import { useState } from "react";
 
@@ -20,15 +19,14 @@ const Destination = () => {
       <main className={styles.container}>
         <h4><span className={styles.blackColor}>01</span> Pick your destination</h4>
         <section className={styles.planetContainer}>
-          <motion.img 
+          <img 
             key={activePlanet}
             src={data[activePlanet].image} 
             alt={data[activePlanet].title} 
             className={styles.planet}
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -100, opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            width={480}
+            height={480}
+            loading="lazy"
           />
           <div className={styles.contentContainer}>
             <div className={styles.buttonContainer}>

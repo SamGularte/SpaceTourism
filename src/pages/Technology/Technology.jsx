@@ -1,5 +1,4 @@
 import styles from './Technology.module.css'
-import { motion } from "framer-motion";
 import { useMediaQuery } from 'react-responsive';
 
 import { useState } from "react";
@@ -34,15 +33,14 @@ const Technology = () => {
               <p className={styles.activeTechnologyDescription}>{data[activeTechnology].description}</p>
             </div>
           </div>
-          <motion.img 
+          <img 
             key={activeTechnology}
             src={isMobile ? data[activeTechnology].image.mobile : data[activeTechnology].image.desktop} 
             className={styles.technologyImg}
             alt={`${data[activeTechnology].name} image`} 
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -100, opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            width={515}
+            height={527}
+            loading="lazy"
           />
         </section>
       </main>
