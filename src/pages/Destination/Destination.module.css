@@ -1,5 +1,6 @@
 .background{
-    background-image: url('/background-2.jpg');
+    background-color: hsl(230 35% 7%);
+    background-image: url('/background-2.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
